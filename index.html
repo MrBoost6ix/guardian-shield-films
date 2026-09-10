@@ -12,7 +12,7 @@
 <body>
   <header class="site-header" id="top">
     <div class="header-inner">
-      <a class="brand" href="#top" aria-label="Guardian Shield Films home">
+      <a class="brand" href="index.html" aria-label="Guardian Shield Films home">
         <img src="assets/logo-mark.jpg" width="42" height="42" alt="Guardian Shield Films lion logo">
         <span class="brand-text">
           <strong>Guardian Shield Films</strong>
@@ -25,10 +25,11 @@
       </button>
 
       <nav class="nav" id="site-nav" aria-label="Primary">
-        <a href="#products">Products</a>
-        <a href="#installation">Installation</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Get a quote</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="products.html">Products</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Get a quote</a>
       </nav>
     </div>
   </header>
@@ -53,8 +54,8 @@
             Guardian Shield Films delivers shatter-resistant, privacy-ready window protection for homes and businesses across Canada — engineered to stay nearly invisible until you need it.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Get a quote</a>
-            <a class="btn btn-ghost" href="#products">Explore products</a>
+            <a class="btn btn-primary" href="contact.html">Get a quote</a>
+            <a class="btn btn-ghost" href="#compare">See the difference</a>
           </div>
         </div>
       </div>
@@ -82,6 +83,54 @@
       </div>
     </section>
 
+    <!-- WITHOUT / WITH scroll-driven shatter story -->
+    <section class="compare-story" id="compare" aria-label="Without vs with Guardian Shield Films">
+      <div class="compare-intro container">
+        <p class="eyebrow" style="justify-content:center">Impact demo</p>
+        <h2>Scroll the difference</h2>
+        <p>Same window. Same strike. Completely different outcome — see what happens without film, then with Guardian Shield Films holding the glass.</p>
+      </div>
+
+      <article class="compare-panel is-without" aria-label="Without Guardian Shield Films">
+        <div class="compare-bg">
+          <img src="assets/without-window.jpg" alt="Large residential window glass without security film" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="compare-veil" aria-hidden="true"></div>
+        <div class="shatter-layer" aria-hidden="true">
+          <div class="shatter-flash"></div>
+          <div class="shatter-cracks"></div>
+          <div class="shatter-shards"></div>
+        </div>
+        <div class="hammer-fx" aria-hidden="true">
+          <img src="assets/hammer.png" alt="" width="420" height="585">
+        </div>
+        <div class="compare-content">
+          <p class="compare-kicker">Section A</p>
+          <h2>Without Guardian Shield Films</h2>
+          <p class="compare-lead">Ordinary glass fails under impact — cracks spiderweb across the pane, then shards fall. One hit can mean injury, chaos, and an open entry point.</p>
+          <p class="compare-badge">Impact → cracks → shatter</p>
+        </div>
+      </article>
+
+      <article class="compare-panel is-with" aria-label="With Guardian Shield Films">
+        <div class="compare-bg">
+          <img src="assets/with-film-protected.jpg" alt="Matching window scene protected by Guardian Shield Films" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="compare-veil" aria-hidden="true"></div>
+        <div class="film-sheen" aria-hidden="true"></div>
+        <div class="protect-glow" aria-hidden="true"></div>
+        <div class="hammer-fx" aria-hidden="true">
+          <img src="assets/hammer.png" alt="" width="420" height="585">
+        </div>
+        <div class="compare-content">
+          <p class="compare-kicker">Section B</p>
+          <h2>With Guardian Shield Films</h2>
+          <p class="compare-lead">The hammer hits — but the film holds. A dull thud, a slight flex, and a protective sheen. Glass stays in place, buying time and keeping people safer.</p>
+          <p class="compare-badge">✓ Film holds · security glow</p>
+        </div>
+      </article>
+    </section>
+
     <section class="products" id="products">
       <div class="container">
         <div class="section-head">
@@ -107,7 +156,7 @@
               <p>
                 Nearly invisible security and shatter-resistant clarity. Hold glass together on impact while keeping daylight and views exactly as they are — ideal for homes, storefronts, and open offices.
               </p>
-              <a class="link" href="#contact">Ask about Clear Guard →</a>
+              <a class="link" href="products.html#clear-guard">Explore Clear Guard →</a>
             </div>
           </article>
 
@@ -127,7 +176,7 @@
               <p>
                 Daytime mirroring plus security. Enjoy outward views while the exterior presents a sleek reflective face — privacy when you want it, protection when you need it.
               </p>
-              <a class="link" href="#contact">Ask about Mirror Guard →</a>
+              <a class="link" href="products.html#mirror-guard">Explore Mirror Guard →</a>
             </div>
           </article>
 
@@ -147,7 +196,7 @@
               <p>
                 Frosted, obscured privacy with built-in protection. Soft diffused light for bathrooms, conference rooms, and corridors — elegant cover without heavy curtains.
               </p>
-              <a class="link" href="#contact">Ask about Foggy Guard →</a>
+              <a class="link" href="products.html#foggy-guard">Explore Foggy Guard →</a>
             </div>
           </article>
         </div>
@@ -172,7 +221,59 @@
             <p>
               Our technicians prep every pane, apply with professional squeegee technique, and trim for a factory-clean edge. No DIY guesswork — just durable film that looks intentional.
             </p>
-            <a class="btn btn-primary" href="#contact">Book an install consult</a>
+            <a class="btn btn-primary" href="contact.html">Book an install consult</a>
+          </div>
+        </div>
+
+        <div class="carousel-section" style="margin-top:2.5rem">
+          <div class="section-head" style="margin-bottom:1.5rem">
+            <p class="eyebrow" style="justify-content:center">In the field</p>
+            <h2>Professionals at work</h2>
+            <p>Large-format looks at real installs — residential and commercial glass protected by Guardian Shield Films.</p>
+          </div>
+
+          <div class="carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Installer photo slideshow">
+            <div class="carousel-track">
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 8">
+                <img src="assets/carousel-1.jpg" alt="Professional installer carefully applying security film with a squeegee" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Precision</span>Squeegee application on large glass</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 8" aria-hidden="true">
+                <img src="assets/carousel-2.jpg" alt="Technician installing security film on a commercial storefront" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Commercial</span>Storefront &amp; office installs</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 8" aria-hidden="true">
+                <img src="assets/carousel-3.jpg" alt="Installer positioning security film across a wide window pane" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Large panes</span>Film placement on floor-to-ceiling glass</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 8" aria-hidden="true">
+                <img src="assets/carousel-4.jpg" alt="Close detail of professional edge trimming during film install" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Finish</span>Clean edge trimming &amp; detail work</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 8" aria-hidden="true">
+                <img src="assets/carousel-5.jpg" alt="Residential window security film being installed by a technician" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Residential</span>Home window protection</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="6 of 8" aria-hidden="true">
+                <img src="assets/carousel-6.jpg" alt="Glass preparation by a professional before applying security film" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Prep</span>Surface cleaning before bonding</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="7 of 8" aria-hidden="true">
+                <img src="assets/carousel-7.jpg" alt="Close-up of security film bonding to glass during installation" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Bond</span>Close-up film adhesion</div>
+              </div>
+              <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="8 of 8" aria-hidden="true">
+                <img src="assets/carousel-8.jpg" alt="Multi-pane office glass receiving security film from installers" width="1920" height="1080" loading="lazy" decoding="async">
+                <div class="carousel-caption"><span>Offices</span>Multi-pane commercial suites</div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" type="button" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel-btn next" type="button" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="carousel-dots" role="tablist" aria-label="Slide controls"></div>
           </div>
         </div>
 
@@ -212,7 +313,7 @@
           </p>
           <div class="cta-actions">
             <a class="btn btn-primary" href="mailto:hello@shieldfilms.ca?subject=Quote%20request%20—%20Guardian%20Shield%20Films">Email for a quote</a>
-            <a class="btn btn-ghost" href="https://shieldfilms.ca" rel="noopener">Visit shieldfilms.ca</a>
+            <a class="btn btn-ghost" href="contact.html">Contact page</a>
           </div>
         </div>
       </div>
@@ -230,16 +331,16 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>Products</h4>
-          <a href="#products">Clear Guard Films</a>
-          <a href="#products">One-Way Mirror Guard Films</a>
-          <a href="#products">Foggy Guard Films</a>
+          <h4>Explore</h4>
+          <a href="products.html">Products</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="index.html#compare">Impact demo</a>
         </div>
         <div class="footer-col">
           <h4>Connect</h4>
           <a href="https://shieldfilms.ca">shieldfilms.ca</a>
           <a href="mailto:hello@shieldfilms.ca">hello@shieldfilms.ca</a>
-          <a href="#installation">Installation</a>
+          <a href="contact.html">Get a quote</a>
         </div>
       </div>
       <div class="footer-bottom">

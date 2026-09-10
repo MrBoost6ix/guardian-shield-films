@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a quote from Guardian Shield Films. hello@shieldfilms.ca · shieldfilms.ca">
+  <meta name="theme-color" content="#0a0b0d">
+  <title>Contact | Guardian Shield Films — shieldfilms.ca</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/jpeg" href="assets/logo-mark.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Guardian Shield Films home">
+        <img src="assets/logo-mark.jpg" width="42" height="42" alt="Guardian Shield Films lion logo">
+        <span class="brand-text">
+          <strong>Guardian Shield Films</strong>
+          <span>shieldfilms.ca</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="nav-cta" href="contact.html">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Quote &amp; consult</p>
+        <h1>Let’s shield your windows</h1>
+        <p>Tell us about your home or business. We’ll recommend Clear Guard, One-Way Mirror Guard, or Foggy Guard — then schedule a professional install.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h2>Request a quote</h2>
+            <p>Submit the form and your email client will open with a pre-filled message to our team. Or email us directly anytime.</p>
+            <form class="quote-form" data-quote-form>
+              <label>Name
+                <input type="text" name="name" required autocomplete="name" placeholder="Your name">
+              </label>
+              <label>Email
+                <input type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+              </label>
+              <label>Phone <span style="font-weight:500">(optional)</span>
+                <input type="tel" name="phone" autocomplete="tel" placeholder="+1 …">
+              </label>
+              <label>Interest
+                <select name="interest">
+                  <option value="Clear Guard Films">Clear Guard Films</option>
+                  <option value="One-Way Mirror Guard Films">One-Way Mirror Guard Films</option>
+                  <option value="Foggy Guard Films">Foggy Guard Films</option>
+                  <option value="Not sure — need advice">Not sure — need advice</option>
+                </select>
+              </label>
+              <label>Project details
+                <textarea name="message" placeholder="Home or business? Approximate number of windows? City?"></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Open email quote</button>
+              <p class="form-note">Opens mailto:hello@shieldfilms.ca with your details. No account required.</p>
+            </form>
+          </div>
+
+          <div class="contact-card">
+            <h2>Reach us directly</h2>
+            <p>Prefer to skip the form? Use the contacts below — we respond as quickly as we can.</p>
+            <div class="contact-methods">
+              <a class="contact-method" href="mailto:hello@shieldfilms.ca">
+                <span>Email</span>
+                <strong>hello@shieldfilms.ca</strong>
+              </a>
+              <a class="contact-method" href="https://shieldfilms.ca" rel="noopener">
+                <span>Website</span>
+                <strong>shieldfilms.ca</strong>
+              </a>
+              <div class="contact-method">
+                <span>Service</span>
+                <strong>Residential &amp; commercial · Canada</strong>
+              </div>
+            </div>
+            <div style="margin-top:1.75rem">
+              <img src="assets/lifestyle-install.jpg" alt="Professional installing Guardian Shield Films on architectural glass" width="1600" height="1000" loading="lazy" decoding="async" style="border-radius:var(--radius);border:1px solid var(--border)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-mark.jpg" width="48" height="48" alt="">
+          <div>
+            <strong>Guardian Shield Films</strong>
+            <p>Smart security films that protect without compromising the view.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="products.html">Products</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="index.html#compare">Impact demo</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://shieldfilms.ca">shieldfilms.ca</a>
+          <a href="mailto:hello@shieldfilms.ca">hello@shieldfilms.ca</a>
+          <a href="contact.html">Get a quote</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="y"></span> Guardian Shield Films. All rights reserved.</p>
+        <p>Primary site: <a href="https://shieldfilms.ca">shieldfilms.ca</a></p>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
