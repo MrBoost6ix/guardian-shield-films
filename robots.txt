@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mrboost6ix.github.io/guardian-shield-films/sitemap.xml
