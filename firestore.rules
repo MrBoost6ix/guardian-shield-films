@@ -1,0 +1,57 @@
+rules_version = '2';
+// Guardian Home Defence — Firestore security rules.
+//
+// Public visitors can read published copy and images.
+// Only Google accounts listed below can write, or read drafts.
+//
+// ⚠️  PLACEHOLDER: replace dom@example.com with the same address as
+//     GHD_ADMIN_EMAILS in assets/firebase-config.js, then deploy:
+//     firebase deploy --only firestore:rules
+//
+// Cloud Storage is intentionally not used. New Firebase Storage buckets
+// require the Blaze plan, and this project stays on Spark. Images are
+// compressed WebP documents in Firestore (chunked under the 1 MiB limit).
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null
+        && request.auth.token.email is string
+        && request.auth.token.email_verified == true;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && request.auth.token.email.lower() in [
+          "dom@example.com"
+        ];
+    }
+
+    match /published/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /publishedImages/{imageId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+
+      match /parts/{partId} {
+        allow read: if true;
+        allow create, update, delete: if isAdmin();
+      }
+    }
+
+    match /drafts/{docId} {
+      allow read, create, update, delete: if isAdmin();
+    }
+
+    match /draftImages/{imageId} {
+      allow read, create, update, delete: if isAdmin();
+
+      match /parts/{partId} {
+        allow read, create, update, delete: if isAdmin();
+      }
+    }
+  }
+}

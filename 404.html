@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/content-boot.js"></script>
   
 </head>
 <body>
@@ -25,22 +26,22 @@
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <picture><source type="image/avif" srcset="assets/opt/logo-mark-84.avif 84w, assets/opt/logo-mark-168.avif 168w" sizes="42px"><source type="image/webp" srcset="assets/opt/logo-mark-84.webp 84w, assets/opt/logo-mark-168.webp 168w" sizes="42px"><img src="assets/logo-mark.jpg" width="42" height="42" alt="Guardian Home Defence lion logo"></picture>
+        <picture><source type="image/avif" srcset="assets/opt/logo-mark-84.avif 84w, assets/opt/logo-mark-168.avif 168w" sizes="42px"><source type="image/webp" srcset="assets/opt/logo-mark-84.webp 84w, assets/opt/logo-mark-168.webp 168w" sizes="42px"><img src="assets/logo-mark.jpg" width="42" height="42" alt="Guardian Home Defence lion logo" data-edit="image" data-edit-id="chrome.logo" data-edit-max="512"></picture>
         <span class="brand-text">
-          <strong>Guardian <em>Home Defence</em></strong>
-          <span>A Guardian Defence Technologies company</span>
+          <strong data-edit="text" data-edit-id="chrome.brand.name">Guardian <em>Home Defence</em></strong>
+          <span data-edit="text" data-edit-id="chrome.brand.parent">A Guardian Defence Technologies company</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="site-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Window Films</a>
-        <a href="service-areas.html">Service Areas</a>
-        <a href="how-it-works.html">How it works</a>
-        <a class="nav-cta" href="contact.html">Get a quote</a>
+        <a href="index.html" data-edit="text" data-edit-id="chrome.nav.home">Home</a>
+        <a href="services.html" data-edit="text" data-edit-id="chrome.nav.services">Services</a>
+        <a href="products.html" data-edit="text" data-edit-id="chrome.nav.films">Window Films</a>
+        <a href="service-areas.html" data-edit="text" data-edit-id="chrome.nav.areas">Service Areas</a>
+        <a href="how-it-works.html" data-edit="text" data-edit-id="chrome.nav.how">How it works</a>
+        <a class="nav-cta" href="contact.html" data-edit="text" data-edit-id="chrome.nav.quote">Get a quote</a>
       </nav>
     </div>
   </header>
@@ -48,10 +49,10 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">404</p>
-        <h1>That page isn't here</h1>
-        <p>The page may have moved. Try the home page, our services, or request a quote.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="index.html">Home</a><a class="btn btn-ghost" href="services.html">Services</a></div>
+        <p class="eyebrow" data-edit="text" data-edit-id="404.main.404">404</p>
+        <h1 data-edit="text" data-edit-id="404.main.that-page-isn-t-here">That page isn't here</h1>
+        <p data-edit="text" data-edit-id="404.main.the-page-may-have-moved-try-the-home-page-our-se">The page may have moved. Try the home page, our services, or request a quote.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="index.html" data-edit="text" data-edit-id="shared.a.index-html.home">Home</a><a class="btn btn-ghost" href="services.html" data-edit="text" data-edit-id="shared.a.services-html.services">Services</a></div>
       </div>
     </section>
   </main>
@@ -60,48 +61,51 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img class="footer-lockup" src="assets/logo-lockup.svg" width="260" height="60" alt="Guardian Home Defence">
-          <p>Home security upgrades across the Greater Toronto Area — doors, glass, cameras, alarms and safe rooms, planned and installed by one team.</p>
-          <p class="footer-sub">Guardian Home Defence and <a href="products.html">Guardian Shield Films</a> are brands of Guardian Defence Technologies.</p>
+          <img class="footer-lockup" src="assets/logo-lockup.svg" width="260" height="60" alt="Guardian Home Defence" data-edit="image" data-edit-id="chrome.footer.lockup" data-edit-max="800">
+          <p data-edit="text" data-edit-id="chrome.footer.blurb">Home security upgrades across the Greater Toronto Area — doors, glass, cameras, alarms and safe rooms, planned and installed by one team.</p>
+          <p class="footer-sub" data-edit="text" data-edit-id="chrome.footer.sub">Guardian Home Defence and <a href="products.html">Guardian Shield Films</a> are brands of Guardian Defence Technologies.</p>
         </div>
         <div class="footer-col">
-          <p class="footer-heading">Services</p>
-          <a href="services.html#doors">Hardened doors</a>
-          <a href="services.html#glass-gel">Glass gel protection</a>
-          <a href="services.html#window-films">Security window films</a>
-          <a href="services.html#locks">Locks &amp; latches</a>
-          <a href="services.html#cameras">Hardwired cameras</a>
-          <a href="services.html#sirens">Sirens &amp; horns</a>
-          <a href="services.html#two-way-audio">Two-way audio</a>
-          <a href="services.html#safe-rooms">Panic &amp; safe rooms</a>
+          <p class="footer-heading" data-edit="text" data-edit-id="chrome.footer.heading.services">Services</p>
+          <a href="services.html#doors" data-edit="text" data-edit-id="chrome.footer.link.hardened-doors">Hardened doors</a>
+          <a href="services.html#glass-gel" data-edit="text" data-edit-id="chrome.footer.link.glass-gel-protection">Glass gel protection</a>
+          <a href="services.html#window-films" data-edit="text" data-edit-id="chrome.footer.link.security-window-films">Security window films</a>
+          <a href="services.html#locks" data-edit="text" data-edit-id="chrome.footer.link.locks-latches">Locks &amp; latches</a>
+          <a href="services.html#cameras" data-edit="text" data-edit-id="chrome.footer.link.hardwired-cameras">Hardwired cameras</a>
+          <a href="services.html#sirens" data-edit="text" data-edit-id="chrome.footer.link.sirens-horns">Sirens &amp; horns</a>
+          <a href="services.html#two-way-audio" data-edit="text" data-edit-id="chrome.footer.link.two-way-audio">Two-way audio</a>
+          <a href="services.html#safe-rooms" data-edit="text" data-edit-id="chrome.footer.link.panic-safe-rooms">Panic &amp; safe rooms</a>
         </div>
         <div class="footer-col">
-          <p class="footer-heading">Service areas</p>
-          <a href="service-area-toronto.html">Toronto</a>
-          <a href="service-area-mississauga.html">Mississauga</a>
-          <a href="service-area-brampton.html">Brampton</a>
-          <a href="service-area-vaughan.html">Vaughan</a>
-          <a href="service-area-markham.html">Markham</a>
-          <a href="service-area-richmond-hill.html">Richmond Hill</a>
-          <a href="service-area-oakville.html">Oakville</a>
-          <a href="service-area-pickering-ajax.html">Pickering &amp; Ajax</a>
-          <a href="service-area-durham.html">Durham Region</a>
+          <p class="footer-heading" data-edit="text" data-edit-id="chrome.footer.heading.service-areas">Service areas</p>
+          <a href="service-area-toronto.html" data-edit="text" data-edit-id="chrome.footer.link.toronto">Toronto</a>
+          <a href="service-area-mississauga.html" data-edit="text" data-edit-id="chrome.footer.link.mississauga">Mississauga</a>
+          <a href="service-area-brampton.html" data-edit="text" data-edit-id="chrome.footer.link.brampton">Brampton</a>
+          <a href="service-area-vaughan.html" data-edit="text" data-edit-id="chrome.footer.link.vaughan">Vaughan</a>
+          <a href="service-area-markham.html" data-edit="text" data-edit-id="chrome.footer.link.markham">Markham</a>
+          <a href="service-area-richmond-hill.html" data-edit="text" data-edit-id="chrome.footer.link.richmond-hill">Richmond Hill</a>
+          <a href="service-area-oakville.html" data-edit="text" data-edit-id="chrome.footer.link.oakville">Oakville</a>
+          <a href="service-area-pickering-ajax.html" data-edit="text" data-edit-id="chrome.footer.link.pickering-ajax">Pickering &amp; Ajax</a>
+          <a href="service-area-durham.html" data-edit="text" data-edit-id="chrome.footer.link.durham-region">Durham Region</a>
         </div>
         <div class="footer-col">
-          <p class="footer-heading">Connect</p>
-          <a href="contact.html">Request a quote</a>
-          <a href="how-it-works.html">How it works</a>
-          <a href="index.html#compare">Glass impact demo</a>
-          <a data-quote-email href="contact.html">Email us</a>
+          <p class="footer-heading" data-edit="text" data-edit-id="chrome.footer.heading.connect">Connect</p>
+          <a href="contact.html" data-edit="text" data-edit-id="chrome.footer.link.request-a-quote">Request a quote</a>
+          <a href="how-it-works.html" data-edit="text" data-edit-id="chrome.footer.link.how-it-works">How it works</a>
+          <a href="index.html#compare" data-edit="text" data-edit-id="chrome.footer.link.glass-impact-demo">Glass impact demo</a>
+          <a data-quote-email href="contact.html" data-edit="text" data-edit-id="chrome.footer.link.email-us">Email us</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© <span data-year>2026</span> Guardian Defence Technologies. All rights reserved.</p>
-        <p>Serving the Greater Toronto Area, Ontario</p>
+        <p data-edit="text" data-edit-id="chrome.footer.legal">© <span data-year>2026</span> Guardian Defence Technologies. All rights reserved.</p>
+        <p data-edit="text" data-edit-id="chrome.footer.region">Serving the Greater Toronto Area, Ontario</p>
       </div>
     </div>
   </footer>
   <script src="assets/config.js"></script>
+  <script src="assets/firebase-config.js"></script>
   <script src="assets/main.js" defer></script>
+  <script src="assets/glass-sequence.js" defer></script>
+  <script type="module" src="assets/admin.js"></script>
 </body>
 </html>
