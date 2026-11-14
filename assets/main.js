@@ -92,7 +92,7 @@
         if (copy) copy.style.transform = "translate3d(0," + ((0.5 - pp) * 22).toFixed(2) + "px,0)";
       });
 
-      if (compareStory && compareFill) {
+      if (compareStory && compareFill && !compareStory.hasAttribute("data-glass-story")) {
         var cr = compareStory.getBoundingClientRect();
         var total = Math.max(1, compareStory.offsetHeight - viewH * 0.35);
         var cp = clamp((viewH * 0.15 - cr.top) / total, 0, 1);
